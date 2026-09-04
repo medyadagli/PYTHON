@@ -1,17 +1,10 @@
-print("CINEMA TICKET STATION")
-age=int(input("How old are you?"))
-
-if age<18:
-    print("A ticket for 100 TL")
-if age >= 65 :
-    print("A ticket for 150 TL")
-if  18 <= age <= 64:
-    student=input("Are you a student? Yes/No: ")
-if student == "YES":
- 
-  print("YES,a  ticket for 100 TL")
+print("Mini shopping system")
+bakiye=float(input("Kullanıcıdan bakiye al:"))
+urun_fiyatı=float(input("Kullanıcıdan ürün fiyatı al:"))
+if urun_fiyatı <= bakiye:
+    print("Purchase successful!")
+    bakiye -= urun_fiyatı
 else:
-   print("No,a full ticket costs 200 TL")
+    print("Not enough money!")
 
-
-                  
+print(bakiye)
