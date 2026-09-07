@@ -1,10 +1,7 @@
-print("Mini shopping system")
-bakiye=float(input("Kullanıcıdan bakiye al:"))
-urun_fiyatı=float(input("Kullanıcıdan ürün fiyatı al:"))
-if urun_fiyatı <= bakiye:
-    print("Purchase successful!")
-    bakiye -= urun_fiyatı
-else:
-    print("Not enough money!")
-
-print(bakiye)
+#while loop
+start_number=int(input("Enter the start number:"))
+end_number=int(input("Enter the ending number:"))
+while(start_number<end_number):
+    if(start_number %2 == 0):
+        print(start_number,end=" ")
+    start_number+=1
