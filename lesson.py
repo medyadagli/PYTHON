@@ -1,7 +1,9 @@
 #while loop
-start_number=int(input("Enter the start number:"))
-end_number=int(input("Enter the ending number:"))
-while(start_number<end_number):
-    if(start_number %2 == 0):
-        print(start_number,end=" ")
-    start_number+=1
+
+result=1
+i=1
+number=int(input("Enter an integer:"))
+while(i<=number):
+    result*=i
+    i+=1
+print(f"{number}!={result}")
